@@ -22,3 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/directorios', [DirectorioController::class, 'index']);
 Route::get('/directorios/{directorio}', [DirectorioController::class, 'show']);
+Route::post('/directorios', [DirectorioController::class, 'store']);
+Route::put('/directorios/{directorio}', [DirectorioController::class, 'update']);
+Route::delete('/directorios/{directorio}', [DirectorioController::class, 'destroy']);

@@ -16,5 +16,7 @@ class Directorio extends Model {
         'foto',
     ];
 
+    protected $hidden = [ 'created_at', 'updated_at' ];
+
     
 }
